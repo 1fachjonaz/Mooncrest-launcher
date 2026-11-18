@@ -1,0 +1,294 @@
+{
+  "schema": 1,
+  "generated": "2026-11-16",
+  "publisher": "Mooncrest Group",
+  "launcher": {
+    "latest": {
+      "version": "1.0.0",
+      "date": "2026-11-15",
+      "channel": "stable",
+      "notes": [
+        "First release of the Mooncrest Launcher."
+      ],
+      "files": []
+    }
+  },
+  "products": [
+    {
+      "id": "city-life",
+      "name": "City Life",
+      "kind": "game",
+      "featured": true,
+      "status": "in_development",
+      "developer": "Mooncrest Group",
+      "publisher": "Mooncrest Group",
+      "tagline": {
+        "de": "Open World in San Cordova. Kostenlos.",
+        "en": "Open world in San Cordova. Free to play."
+      },
+      "description": {
+        "de": [
+          "San Cordova ist eine fiktive Küstenmetropole im Süden der USA, inspiriert von Südflorida: Atlantikküste, eine Bucht mit Inseln, subtropisches Klima und starker lateinamerikanischer Einfluss. Glas-Hochhäuser stehen neben Art-déco-Hotels und Arbeitervierteln.",
+          "Du spielst Daniel Carter. An seiner Seite: Isabella Reyes. City Life entsteht in Unreal Engine 5 und wird kostenlos."
+        ],
+        "en": [
+          "San Cordova is a fictional coastal city in the southern US, inspired by South Florida: Atlantic coast, a bay with islands, a subtropical climate and a strong Latin American influence. Glass towers stand next to Art Deco hotels and working-class neighborhoods.",
+          "You play Daniel Carter. At his side: Isabella Reyes. City Life is being built in Unreal Engine 5 and will be free."
+        ]
+      },
+      "highlights": {
+        "de": [
+          "Downtown Cordova: Finanzzentrum an der Bucht mit Hochhäusern, Hotels und Hochbahn",
+          "Coral Shores: Art-déco-Hotels, Neon und Strandpromenade",
+          "Bahía Vieja, Puerto Norte, Palm Isles und weitere Viertel mit eigenem Charakter",
+          "Daniel Carter und Isabella Reyes als MetaHumans – gleiches Modell im Spiel und in Zwischensequenzen"
+        ],
+        "en": [
+          "Downtown Cordova: financial center on the bay with towers, hotels and an elevated train",
+          "Coral Shores: Art Deco hotels, neon and a beach promenade",
+          "Bahía Vieja, Puerto Norte, Palm Isles and more districts with their own character",
+          "Daniel Carter and Isabella Reyes as MetaHumans – same model in gameplay and cutscenes"
+        ]
+      },
+      "includes": [],
+      "requirements": {
+        "de": [
+          "Windows 10 oder 11 (64-Bit)",
+          "Die genauen Anforderungen folgen mit dem ersten spielbaren Build."
+        ],
+        "en": [
+          "Windows 10 or 11 (64-bit)",
+          "Exact requirements follow with the first playable build."
+        ]
+      },
+      "tags": [
+        "Open World",
+        "Unreal Engine 5",
+        "Kostenlos"
+      ],
+      "media": {
+        "icon": "/media/citylife/cover.jpg",
+        "cover": "/media/citylife/cover.jpg",
+        "hero": "/media/citylife/hero.jpg",
+        "accent": "#e6b877",
+        "screenshots": [
+          {
+            "src": "/media/citylife/shot-downtown.jpg",
+            "caption": {
+              "de": "Downtown Cordova (in Entwicklung)",
+              "en": "Downtown Cordova (work in progress)"
+            }
+          },
+          {
+            "src": "/media/citylife/shot-street.jpg",
+            "caption": {
+              "de": "Straße in Downtown (in Entwicklung)",
+              "en": "Downtown street (work in progress)"
+            }
+          },
+          {
+            "src": "/media/citylife/shot-coral-shores.jpg",
+            "caption": {
+              "de": "Art-déco-Hotels in Coral Shores (in Entwicklung)",
+              "en": "Art Deco hotels in Coral Shores (work in progress)"
+            }
+          },
+          {
+            "src": "/media/citylife/shot-ondina.jpg",
+            "caption": {
+              "de": "Hotel Ondina (in Entwicklung)",
+              "en": "Hotel Ondina (work in progress)"
+            }
+          },
+          {
+            "src": "/media/citylife/shot-ondina-beach.jpg",
+            "caption": {
+              "de": "Hotel Ondina am Strand (in Entwicklung)",
+              "en": "Hotel Ondina on the beach (work in progress)"
+            }
+          }
+        ]
+      },
+      "install": {
+        "type": "zip",
+        "folder": "City Life",
+        "main_binary": "CityLife.exe",
+        "strip_root": true
+      },
+      "releases": []
+    },
+    {
+      "id": "mlbclient",
+      "name": "MLBClient",
+      "kind": "software",
+      "featured": false,
+      "developer": "Jonaz Productions",
+      "publisher": "Mooncrest Group",
+      "website": "https://mlbclient.vercel.app/",
+      "support_url": "https://mlbclient.vercel.app/support",
+      "community_url": "https://discord.gg/UrWXmaFQCE",
+      "tagline": {
+        "de": "Dein Minecraft, ein Klick auf Play entfernt.",
+        "en": "Your Minecraft, one Play away."
+      },
+      "description": {
+        "de": [
+          "MLBClient ist ein kostenloser Minecraft-Launcher mit eigenem Fabric-Client. Er installiert Minecraft, Fabric, Java und den Client und hält alles aktuell.",
+          "Microsoft-Login, Versionsverwaltung, QuickClient, 3D-Cosmetics, Emotes, Freunde und Lieblingsserver – in einer App für MLBClient und QuickClient."
+        ],
+        "en": [
+          "MLBClient is a free Minecraft launcher and Fabric client. It installs Minecraft, Fabric, Java and the client, and keeps everything up to date.",
+          "Microsoft login, version management, QuickClient, 3D cosmetics, emotes, friends and favorite servers – one app for MLBClient and QuickClient."
+        ]
+      },
+      "highlights": {
+        "de": [
+          "Startseite mit deinem Skin als 3D-Modell und großem Play-Button",
+          "MLBClient und QuickClient nebeneinander im Versionen-Tab",
+          "Shop mit täglichen Gratis-Credits und Locker für Cosmetics",
+          "Freunde mit Online-Status und Lieblingsserver mit Ein-Klick-Join"
+        ],
+        "en": [
+          "Home screen with your skin as a 3D model and a big Play button",
+          "MLBClient and QuickClient side by side in the Versions tab",
+          "Shop with free daily credits and a locker for cosmetics",
+          "Friends with online status and favorite servers with one-click join"
+        ]
+      },
+      "includes": [
+        "QuickClient 1.1.0",
+        "MLBClient 0.1.0-beta (Minecraft 26.2, 26.3)"
+      ],
+      "requirements": {
+        "de": [
+          "Windows 10 oder 11 (64-Bit)",
+          "Microsoft-Konto mit Minecraft: Java Edition",
+          "Internet für Login, Erstinstallation und Updates"
+        ],
+        "en": [
+          "Windows 10 or 11 (64-bit)",
+          "Microsoft account that owns Minecraft: Java Edition",
+          "Internet for login, first install and updates"
+        ]
+      },
+      "tags": [
+        "Minecraft",
+        "Fabric",
+        "Launcher"
+      ],
+      "media": {
+        "icon": "/media/mlbclient/icon.jpg",
+        "logo": "/media/mlbclient/logo-white.svg",
+        "hero": "/media/mlbclient/keyart.jpg",
+        "accent": "#f28dc0",
+        "screenshots": [
+          {
+            "src": "/media/mlbclient/emotes.jpg",
+            "caption": {
+              "de": "Release-Emotes",
+              "en": "Release emotes"
+            }
+          },
+          {
+            "src": "/media/mlbclient/screen-home.jpg",
+            "caption": {
+              "de": "Startseite",
+              "en": "Home"
+            }
+          },
+          {
+            "src": "/media/mlbclient/screen-quickclient.jpg",
+            "caption": {
+              "de": "QuickClient",
+              "en": "QuickClient"
+            }
+          },
+          {
+            "src": "/media/mlbclient/screen-versions.jpg",
+            "caption": {
+              "de": "Versionen",
+              "en": "Versions"
+            }
+          },
+          {
+            "src": "/media/mlbclient/screen-profiles.jpg",
+            "caption": {
+              "de": "Profile",
+              "en": "Profiles"
+            }
+          },
+          {
+            "src": "/media/mlbclient/screen-shop.jpg",
+            "caption": {
+              "de": "Shop",
+              "en": "Shop"
+            }
+          },
+          {
+            "src": "/media/mlbclient/screen-dock.jpg",
+            "caption": {
+              "de": "Dock",
+              "en": "Dock"
+            }
+          }
+        ],
+        "cover": "/media/mlbclient/cover.jpg"
+      },
+      "install": {
+        "type": "nsis",
+        "registry_name": "MLBClient Launcher",
+        "folder": "MLBClient Launcher",
+        "main_binary": "mlbclient-launcher.exe",
+        "silent_args": [
+          "/S"
+        ],
+        "update_args": [
+          "/S",
+          "/UPDATE"
+        ]
+      },
+      "releases": [
+        {
+          "version": "0.3.0-beta",
+          "date": "2026-11-08",
+          "channel": "beta",
+          "title": "Beta 2 – The Big Comeback",
+          "notes": [],
+          "files": [
+            {
+              "platform": "windows-x86_64",
+              "file_name": "MLBClient-Launcher-Beta2-0.3.0-setup.exe",
+              "url": "https://mlbclient.vercel.app/mooncrest/v1/files/MLBClient-Launcher-Beta2-0.3.0-setup.exe",
+              "sha256": "1d4858528afcd433d5fba9fed9b40a6198305432c810341e8f5268397c8a86ec",
+              "size": 11535989
+            }
+          ]
+        },
+        {
+          "version": "0.2.0-beta",
+          "date": "2026-11-08",
+          "channel": "beta",
+          "title": "Beta 0.2",
+          "notes": [
+            "New home screen with your skin as a 3D model, your nametag and a big Play button",
+            "Shop with free daily credits, and a locker to equip cosmetics",
+            "Friends with online status and friend requests",
+            "Favorite servers with live player count, ping and one-click join",
+            "MLBClient and QuickClient side by side in the Versions tab",
+            "Sakura and Classic look, English and German",
+            "Builds for Windows (setup) and Linux (AppImage and .deb)"
+          ],
+          "files": [
+            {
+              "platform": "windows-x86_64",
+              "file_name": "MLBClient Launcher_0.2.0-beta_x64-setup.exe",
+              "url": "https://mlbclient.vercel.app/mooncrest/v1/files/MLBClient-Launcher_0.2.0-beta_x64-setup.exe",
+              "sha256": "2c13ce0dee9d5f3bffba589cd33d1caac3251772c7255f83ea1c2176fb4f7951",
+              "size": 10566913
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

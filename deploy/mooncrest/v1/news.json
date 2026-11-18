@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "entries": [
+    {
+      "id": "beta-moved",
+      "date": "2026-11-15",
+      "category": "update",
+      "product": "mlbclient",
+      "url": "https://mlbclient.vercel.app/news#beta-moved",
+      "title": {
+        "en": "The public beta moves to 22 November",
+        "de": "Die öffentliche Beta verschiebt sich auf den 22. November"
+      },
+      "summary": {
+        "en": "The public beta of the MLBClient Launcher moves by one week, to 22 November 2026 at 16:00 (German time). The download buttons unlock by themselves at that time.",
+        "de": "Die öffentliche Beta des MLBClient Launchers verschiebt sich um eine Woche auf den 22. November 2026, 16:00 Uhr. Die Download-Buttons schalten sich dann von selbst frei."
+      },
+      "image": "/media/mlbclient/screen-home.jpg"
+    },
+    {
+      "id": "beta-trailer",
+      "date": "2026-11-08",
+      "category": "trailer",
+      "product": "mlbclient",
+      "url": "https://www.youtube.com/watch?v=HVJCQes5Kx4",
+      "title": {
+        "en": "The MLBClient Launcher beta trailer is out",
+        "de": "Der Beta-Trailer zum MLBClient Launcher ist da"
+      },
+      "summary": {
+        "en": "The official trailer shows the new home screen, the mod search, skins and versions, and the date of the public beta.",
+        "de": "Der offizielle Trailer zeigt die neue Startseite, die Mod-Suche, Skins und Versionen und das Datum der öffentlichen Beta."
+      },
+      "image": "/media/mlbclient/keyart.jpg"
+    },
+    {
+      "id": "new-year-2027",
+      "date": "2026-11-08",
+      "category": "event",
+      "product": "mlbclient",
+      "url": "https://mlbclient.vercel.app/news#new-year-2027",
+      "title": {
+        "en": "Coming up: New Year 2027 Collection",
+        "de": "Bald: New Year 2027 Collection"
+      },
+      "summary": {
+        "en": "From 31 December 2026 to 6 January 2027 the whole collection is free: 23 cosmetics and 5 emotes. Open the shop in the launcher and press Claim.",
+        "de": "Vom 31. Dezember 2026 bis 6. Januar 2027 ist die ganze Kollektion gratis: 23 Cosmetics und 5 Emotes. Shop im Launcher öffnen und auf Claim drücken."
+      },
+      "image": "/media/mlbclient/screen-shop.jpg"
+    },
+    {
+      "id": "christmas-2026",
+      "date": "2026-11-08",
+      "category": "event",
+      "product": "mlbclient",
+      "url": "https://mlbclient.vercel.app/news",
+      "title": {
+        "en": "Coming up: Christmas 2026",
+        "de": "Bald: Christmas 2026"
+      },
+      "summary": {
+        "en": "From 1 December the Christmas 2026 collection is in the launcher shop: 19 cosmetics and 8 emotes, unlocked with free daily credits.",
+        "de": "Ab 1. Dezember ist die Christmas-2026-Kollektion im Launcher-Shop: 19 Cosmetics und 8 Emotes, freischaltbar mit täglichen Gratis-Credits."
+      }
+    },
+    {
+      "id": "launcher-beta-0-2",
+      "date": "2026-11-07",
+      "category": "launcher",
+      "product": "mlbclient",
+      "url": "https://mlbclient.vercel.app/news",
+      "title": {
+        "en": "MLBClient Launcher Beta 0.2",
+        "de": "MLBClient Launcher Beta 0.2"
+      },
+      "summary": {
+        "en": "New home screen with your skin in 3D, a shop with free daily credits, friends, favorite servers, and MLBClient and QuickClient side by side.",
+        "de": "Neue Startseite mit deinem Skin in 3D, Shop mit täglichen Gratis-Credits, Freunde, Lieblingsserver, und MLBClient und QuickClient nebeneinander."
+      },
+      "image": "/media/mlbclient/screen-versions.jpg"
+    },
+    {
+      "id": "launch-collection",
+      "date": "2026-11-07",
+      "category": "cosmetics",
+      "product": "mlbclient",
+      "url": "https://mlbclient.vercel.app/news",
+      "title": {
+        "en": "Launch Collection: four free release emotes",
+        "de": "Launch Collection: vier gratis Release-Emotes"
+      },
+      "summary": {
+        "en": "The Launch, MLB Hype, The Comeback and New Era are free for every player. Other MLBClient and QuickClient players see them too.",
+        "de": "The Launch, MLB Hype, The Comeback und New Era sind für alle gratis. Andere MLBClient- und QuickClient-Spieler sehen sie auch."
+      },
+      "image": "/media/mlbclient/emotes.jpg"
+    },
+    {
+      "id": "quickclient-1-1",
+      "date": "2026-11-07",
+      "category": "update",
+      "product": "mlbclient",
+      "url": "https://mlbclient.vercel.app/quickclient",
+      "title": {
+        "en": "QuickClient 1.1 uses the MLBClient cosmetics",
+        "de": "QuickClient 1.1 nutzt die MLBClient-Cosmetics"
+      },
+      "summary": {
+        "en": "One locker and one set of owned items for both clients. Available for Minecraft 1.21.11, 26.1.2, 26.2 and 26.3.",
+        "de": "Ein Locker und ein Satz Items für beide Clients. Verfügbar für Minecraft 1.21.11, 26.1.2, 26.2 und 26.3."
+      },
+      "image": "/media/mlbclient/screen-quickclient.jpg"
+    }
+  ]
+}
