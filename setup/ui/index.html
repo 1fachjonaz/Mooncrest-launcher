@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mooncrest Launcher Setup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="stars"></div>
+    <div class="moon"></div>
+    <svg class="limb" viewBox="0 0 600 300" preserveAspectRatio="none">
+      <path id="limb-track" d="M26 300 A274 274 0 0 1 574 300" />
+      <path id="limb-fill" d="M26 300 A274 274 0 0 1 574 300" />
+    </svg>
+    <div class="horizon"></div>
+  </div>
+
+  <header class="bar" data-tauri-drag-region>
+    <div class="brand" data-tauri-drag-region>
+      <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
+        <defs>
+          <mask id="c"><rect width="64" height="64" fill="#fff" /><circle cx="38.5" cy="25" r="16" fill="#000" /></mask>
+          <clipPath id="a"><rect x="0" y="0" width="64" height="44" /></clipPath>
+        </defs>
+        <g clip-path="url(#a)"><circle cx="32" cy="32" r="19" fill="#efe9dc" mask="url(#c)" /></g>
+        <rect x="10" y="45.5" width="44" height="2.5" rx="1.25" fill="#e6b877" />
+      </svg>
+      <span data-tauri-drag-region>Mooncrest</span>
+    </div>
+    <div class="win">
+      <button id="min" aria-label="Minimieren"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M6 12h12" /></svg></button>
+      <button id="close" class="is-close" aria-label="Schließen"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" /></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- install / update / reinstall -->
+    <section id="v-setup" class="view" hidden>
+      <h1 id="setup-title"></h1>
+      <p class="lead" id="setup-lead"></p>
+      <div class="field">
+        <label data-t="folder"></label>
+        <div class="path">
+          <code id="dir"></code>
+          <button id="pick" class="btn btn-quiet" data-t="change"></button>
+        </div>
+        <small id="space" class="muted"></small>
+      </div>
+      <div class="checks" id="checks">
+        <label><input type="checkbox" id="opt-desktop" checked /><span data-t="desktop"></span></label>
+        <label><input type="checkbox" id="opt-start" checked /><span data-t="startmenu"></span></label>
+        <label><input type="checkbox" id="opt-launch" checked /><span data-t="launchAfter"></span></label>
+      </div>
+      <p id="setup-error" class="error" role="alert" hidden></p>
+      <div class="actions">
+        <button id="cancel" class="btn" data-t="cancel"></button>
+        <button id="go" class="btn btn-primary"></button>
+      </div>
+    </section>
+
+    <!-- progress -->
+    <section id="v-progress" class="view is-center" hidden>
+      <p class="pct" id="pct">0 %</p>
+      <h1 id="stage"></h1>
+      <p class="lead" data-t="dontClose"></p>
+    </section>
+
+    <!-- done -->
+    <section id="v-done" class="view is-center" hidden>
+      <h1 id="done-title"></h1>
+      <p class="lead" id="done-lead"></p>
+      <div class="actions is-center">
+        <button id="finish" class="btn" data-t="close"></button>
+        <button id="start" class="btn btn-primary" data-t="start"></button>
+      </div>
+    </section>
+
+    <!-- uninstall -->
+    <section id="v-uninstall" class="view" hidden>
+      <h1 data-t="unTitle"></h1>
+      <p class="lead" data-t="unLead"></p>
+      <div class="checks">
+        <label><input type="checkbox" id="opt-data" /><span data-t="unData"></span></label>
+      </div>
+      <p id="un-error" class="error" role="alert" hidden></p>
+      <div class="actions">
+        <button id="un-cancel" class="btn" data-t="cancel"></button>
+        <button id="un-go" class="btn btn-danger" data-t="unButton"></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot"><span>Beyond the Horizon.</span><span id="ver"></span></footer>
+  <script src="app.js"></script>
+</body>
+</html>

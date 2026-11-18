@@ -1,0 +1,91 @@
+@font-face { font-family: "Hanken Grotesk"; font-weight: 400; src: url(fonts/hanken-grotesk-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Hanken Grotesk"; font-weight: 600; src: url(fonts/hanken-grotesk-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: "Hanken Grotesk"; font-weight: 700; src: url(fonts/hanken-grotesk-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-weight: 600; src: url(fonts/cormorant-garamond-latin-600-normal.woff2) format("woff2"); }
+
+:root {
+  --abyss: #101522; --dusk: #181e2e; --dusk-2: #222a3d;
+  --line: rgba(196, 206, 255, 0.1); --line-strong: rgba(196, 206, 255, 0.18);
+  --moon: #d9e0eb; --regolith: #9ba4b5; --faint: #6f7388;
+  --halo: #e6b877; --halo-strong: #f0c98f; --halo-ink: #1b1407; --danger: #ea8574;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  background: radial-gradient(120% 90% at 70% 110%, #1c2440 0%, var(--abyss) 60%);
+  color: var(--moon); font: 400 14px/1.5 "Hanken Grotesk", "Segoe UI", sans-serif;
+  overflow: hidden; user-select: none; -webkit-font-smoothing: antialiased;
+  display: grid; grid-template-rows: 44px 1fr 40px;
+}
+button { font: inherit; color: inherit; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 2px solid #9aacf0; outline-offset: 2px; }
+
+/* sky: the moon rises behind the window; its limb is the progress bar */
+.sky { position: fixed; inset: 0; pointer-events: none; overflow: hidden; }
+.stars {
+  position: absolute; inset: 0; opacity: 0.55;
+  background-image:
+    radial-gradient(1px 1px at 12% 22%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 33% 14%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 58% 30%, #fff 50%, transparent 51%), radial-gradient(1.5px 1.5px at 81% 12%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 92% 40%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 22% 48%, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 70% 52%, #fff 50%, transparent 51%), radial-gradient(1.5px 1.5px at 46% 8%, #fff 50%, transparent 51%);
+}
+.moon {
+  position: absolute; left: 50%; bottom: -290px; width: 540px; height: 540px; margin-left: -270px; border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, #191d2c 0%, #121522 72%);
+  box-shadow: inset 18px 14px 40px -16px rgba(239, 233, 220, 0.4), 0 0 0 1px rgba(239, 233, 220, 0.1), 0 -20px 140px 0 rgba(239, 233, 220, 0.08);
+  animation: rise 1.6s cubic-bezier(0.2, 0.7, 0.1, 1) both;
+}
+.limb { position: absolute; left: 50%; bottom: -20px; width: 600px; height: 300px; margin-left: -300px; overflow: visible; }
+.limb path { fill: none; stroke-width: 3; vector-effect: non-scaling-stroke; }
+#limb-track { stroke: transparent; }
+#limb-fill { stroke: var(--halo); stroke-linecap: round; filter: drop-shadow(0 0 6px rgba(230, 184, 119, 0.7)); transition: stroke-dashoffset 0.25s linear; }
+.horizon {
+  position: absolute; left: 0; right: 0; bottom: 8px; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(196, 206, 255, 0.18) 20%, rgba(230, 184, 119, 0.6) 50%, rgba(196, 206, 255, 0.18) 80%, transparent);
+}
+@keyframes rise { from { transform: translateY(80px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+.bar { position: relative; z-index: 2; display: flex; align-items: center; justify-content: space-between; padding-left: 20px; }
+.brand { display: flex; align-items: center; gap: 10px; font: 600 20px/1 "Cormorant Garamond", Georgia, serif; }
+.win { display: flex; align-self: stretch; }
+.win button { width: 46px; border: 0; background: transparent; color: var(--regolith); display: grid; place-items: center; }
+.win svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.win button:hover { background: var(--dusk-2); color: var(--moon); }
+.win .is-close:hover { background: #c4402f; color: #fff; }
+
+main { position: relative; z-index: 1; padding: 18px 56px 0; }
+.view { max-width: 560px; display: grid; gap: 14px; animation: in 0.35s ease both; }
+.view.is-center { margin: 30px auto 0; text-align: center; justify-items: center; }
+@keyframes in { from { opacity: 0; transform: translateY(6px); } }
+h1 { margin: 0; font: 700 28px/1.15 "Hanken Grotesk", sans-serif; letter-spacing: -0.02em; }
+.lead { margin: 0; color: var(--regolith); font-size: 15px; max-width: 52ch; }
+.muted { color: var(--faint); }
+.field { display: grid; gap: 6px; margin-top: 6px; }
+.field label { font-weight: 600; font-size: 13px; }
+.path { display: flex; align-items: center; gap: 6px; padding: 4px 4px 4px 14px; border-radius: 10px; background: rgba(22, 26, 38, 0.85); border: 1px solid var(--line); }
+.path code { flex: 1; min-width: 0; font: 13px "Hanken Grotesk", sans-serif; color: var(--regolith); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.checks { display: grid; gap: 8px; margin-top: 4px; }
+.checks label { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+.checks input { width: 16px; height: 16px; accent-color: var(--halo); margin: 0; }
+.actions { display: flex; gap: 10px; margin-top: 10px; }
+.actions.is-center { justify-content: center; }
+.btn {
+  height: 42px; padding: 0 22px; border-radius: 10px; border: 1px solid var(--line-strong); background: rgba(22, 26, 38, 0.8);
+  font-weight: 600; cursor: pointer; transition: background 0.15s, border-color 0.15s;
+}
+.btn:hover:not(:disabled) { background: var(--dusk-2); }
+.btn:disabled { opacity: 0.5; cursor: default; }
+.btn-primary { background: var(--halo); border-color: var(--halo); color: var(--halo-ink); min-width: 160px; }
+.btn-primary:hover:not(:disabled) { background: var(--halo-strong); border-color: var(--halo-strong); }
+.btn-danger { background: var(--danger); border-color: var(--danger); color: #1a0703; }
+.btn-danger:hover:not(:disabled) { background: #f09a8b; }
+.btn-quiet { height: 32px; padding: 0 12px; border-color: transparent; background: transparent; color: var(--regolith); }
+.error { margin: 0; color: var(--danger); font-size: 13.5px; }
+.error button { margin-left: 8px; height: 30px; padding: 0 12px; }
+.pct { margin: 0; font: 700 56px/1 "Hanken Grotesk", sans-serif; font-variant-numeric: tabular-nums; letter-spacing: -0.03em; }
+
+.foot { position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; color: var(--faint); font-size: 12px; }
+.foot span:first-child { font: 600 14px "Cormorant Garamond", Georgia, serif; color: var(--regolith); }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
